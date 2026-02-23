@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const result = addSubscriber(email.toLowerCase().trim());
+    const result = await addSubscriber(email);
 
     return NextResponse.json(result, {
       status: result.success ? 200 : 409,
