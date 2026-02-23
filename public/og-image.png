@@ -1,0 +1,95 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#121212"/>
+      <stop offset="100%" style="stop-color:#1A1A1A"/>
+    </linearGradient>
+    <!-- Glow effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Glow behind Clawster -->
+  <ellipse cx="850" cy="315" rx="180" ry="180" fill="#FF8C69" opacity="0.15" filter="url(#glow)"/>
+
+  <!-- Clawster (scaled up from 128 to ~300px, positioned on the right) -->
+  <g transform="translate(700, 165) scale(2.3)">
+    <style>
+      .salmon { fill: #FF8C69; }
+      .teal { fill: #008080; }
+      .ink { fill: #1A1A1A; }
+    </style>
+    <!-- Tail -->
+    <path d="M 50 100 Q 64 125 78 100 Z" class="salmon" stroke="#8B3A3A" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Left Claw - raised -->
+    <g transform="translate(0, -15) rotate(-30, 30, 70)">
+      <path d="M 40 55 A 24 24 0 1 1 10 85 Q 20 80 25 75 Q 20 65 30 70 Z" class="salmon" stroke="#8B3A3A" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+    <!-- Right Claw - raised -->
+    <g transform="translate(0, -15) rotate(30, 98, 70)">
+      <path d="M 88 55 A 24 24 0 1 0 118 85 Q 108 80 103 75 Q 108 65 98 70 Z" class="salmon" stroke="#8B3A3A" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+    <!-- Body -->
+    <rect x="34" y="28" width="60" height="75" rx="30" class="salmon" stroke="#8B3A3A" stroke-width="4"/>
+    <!-- Belt -->
+    <path d="M 34 82 Q 64 92 94 82 L 94 88 Q 64 98 34 88 Z" class="teal" stroke="#004D4D" stroke-width="2"/>
+    <path d="M 75 85 L 88 108 L 68 102 Z" class="teal" stroke="#004D4D" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Eyes -->
+    <circle cx="48" cy="55" r="7" class="ink"/>
+    <circle cx="80" cy="55" r="7" class="ink"/>
+    <circle cx="46" cy="53" r="3" fill="#FFF"/>
+    <circle cx="78" cy="53" r="3" fill="#FFF"/>
+    <!-- Mouth -->
+    <path d="M 58 66 Q 64 74 70 66" fill="none" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Text content (left side) -->
+  <!-- Headline -->
+  <text x="80" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#FFFFFF" letter-spacing="-2">
+    Meet Clawster.
+  </text>
+
+  <!-- Subtitle -->
+  <text x="80" y="330" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="400" fill="#9CA3AF">
+    Your Desktop AI Companion
+  </text>
+
+  <!-- Description -->
+  <text x="80" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#6B7280">
+    A cute lobster that watches your screen,
+  </text>
+  <text x="80" y="430" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#6B7280">
+    answers questions, and keeps you company.
+  </text>
+
+  <!-- CTA Badge -->
+  <g transform="translate(80, 480)">
+    <rect width="160" height="44" rx="22" fill="#FF8C69"/>
+    <text x="80" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#000000" text-anchor="middle">
+      Star on GitHub
+    </text>
+  </g>
+
+  <!-- Hackathon badge -->
+  <g transform="translate(260, 480)">
+    <rect width="240" height="44" rx="22" fill="transparent" stroke="#008080" stroke-width="2"/>
+    <text x="120" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#008080" text-anchor="middle">
+      2nd Place @ Human&amp; Hackathon
+    </text>
+  </g>
+</svg>

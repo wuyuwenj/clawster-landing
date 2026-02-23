@@ -13,9 +13,10 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Clawster - Your Screen-Aware AI Companion",
+  metadataBase: new URL("https://clawster.pet"),
+  title: "Meet Clawster - The Cute AI Pet That Lives on Your Desktop",
   description:
-    "A cute, animated desktop pet lobster powered by OpenClaw. It watches your screen, answers questions, and keeps you company while you code.",
+    "Meet Clawster: an AI pet that watches your screen, checks live info, and craves your attention. It blinks, stretches, scuttles toward you, and helps you get things done. Runs 100% locally.",
   keywords: [
     "AI",
     "desktop pet",
@@ -27,26 +28,26 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "wuyuwenj" }],
   openGraph: {
-    title: "Clawster - Your Screen-Aware AI Companion",
+    title: "Meet Clawster - The Cute AI Pet That Lives on Your Desktop",
     description:
-      "A cute, animated desktop pet lobster powered by OpenClaw. Built in 8 hours at Human& Hackathon.",
+      "Meet Clawster: an AI pet that watches your screen, checks live info, and craves your attention. It blinks, stretches, scuttles toward you, and helps you get things done. Runs 100% locally.",
     type: "website",
-    url: "https://github.com/wuyuwenj/clawster",
+    url: "https://clawster.pet",
     images: [
       {
-        url: "/screenshots/quick-chat.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Clawster Demo",
+        alt: "Meet Clawster - Your Desktop AI Companion",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Clawster - Your Screen-Aware AI Companion",
+    title: "Meet Clawster - The Cute AI Pet That Lives on Your Desktop",
     description:
-      "A cute, animated desktop pet lobster powered by OpenClaw. Built in 8 hours at Human& Hackathon.",
-    images: ["/screenshots/quick-chat.png"],
+      "Meet Clawster: an AI pet that watches your screen, checks live info, and craves your attention. It blinks, stretches, scuttles toward you, and helps you get things done. Runs 100% locally.",
+    images: ["/og-image.png"],
   },
 };
 
