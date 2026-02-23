@@ -253,12 +253,12 @@ export default function InteractiveClawster() {
       <div
         ref={constraintsRef}
         className="fixed inset-0 pointer-events-none"
-        style={{ zIndex: 49 }}
+        style={{ zIndex: 9998 }}
       />
 
       <motion.div
         ref={containerRef}
-        className="fixed bottom-8 right-8 z-50 cursor-grab active:cursor-grabbing select-none"
+        className="fixed bottom-8 right-8 z-[9999] cursor-grab active:cursor-grabbing select-none"
         style={{ x: smoothX, y: smoothY }}
         drag
         dragConstraints={constraintsRef}
