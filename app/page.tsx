@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import InteractiveClawster from "@/components/InteractiveClawster";
+import EmailForm from "@/components/EmailForm";
+import NewsletterPopup from "@/components/NewsletterPopup";
 
 // Mood data with all 12 SVG animations
 const moods = [
@@ -21,6 +23,9 @@ const moods = [
 export default function LandingPage() {
   return (
     <div className="bg-[#121212] text-neutral-300 antialiased selection:bg-[#FF8C69]/30 selection:text-white flex flex-col min-h-screen">
+      {/* Newsletter Popup */}
+      <NewsletterPopup />
+
       {/* Interactive Clawster Pet */}
       <InteractiveClawster />
 
@@ -88,7 +93,7 @@ export default function LandingPage() {
           <p className="text-base md:text-lg text-neutral-400 max-w-2xl mx-auto mb-10 leading-relaxed">
             A cute, animated desktop pet lobster powered by OpenClaw. It watches
             your screen, answers questions, and keeps you company while you
-            code. Built in 8 hours, solo.
+            code.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
@@ -379,9 +384,22 @@ export default function LandingPage() {
       {/* Footer & CTA */}
       <footer className="border-t border-white/5 mt-auto bg-[#111111]">
         <div className="max-w-7xl mx-auto px-6 py-20 text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-8">
-            Ready to adopt your own Clawster?
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-4">
+            Get notified when Clawster is ready
           </h2>
+          <p className="text-neutral-400 text-sm mb-8 max-w-md mx-auto">
+            We&apos;re polishing Clawster. Drop your email and be the first to know when it launches.
+          </p>
+
+          <div className="relative mb-12">
+            <EmailForm />
+          </div>
+
+          <div className="flex items-center justify-center gap-4 text-neutral-500 text-sm mb-12">
+            <span className="h-px w-12 bg-white/10"></span>
+            <span>or</span>
+            <span className="h-px w-12 bg-white/10"></span>
+          </div>
 
           <Link
             href="https://github.com/wuyuwenj/clawster"
