@@ -6,13 +6,13 @@ function getSupabase(): SupabaseClient {
   if (supabase) return supabase;
 
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const supabasePublishableKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
-  if (!supabaseUrl || !supabaseServiceKey) {
+  if (!supabaseUrl || !supabasePublishableKey) {
     throw new Error("Missing Supabase environment variables");
   }
 
-  supabase = createClient(supabaseUrl, supabaseServiceKey);
+  supabase = createClient(supabaseUrl, supabasePublishableKey);
   return supabase;
 }
 
