@@ -82,7 +82,7 @@ export default function LandingPage() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#008080] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#008080]"></span>
             </span>
-            2nd Place @ Humans& Hackathon
+            2nd Place @ humans& hackathon
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tighter text-white max-w-4xl mx-auto leading-tight mb-6">
