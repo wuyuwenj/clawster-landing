@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://clawster.pet"),
   title: "Meet Clawster - The Cute AI Pet That Lives on Your Desktop",
   description:
-    "Meet Clawster: an AI pet that watches your screen, checks live info, and craves your attention. It blinks, stretches, scuttles toward you, and helps you get things done. Runs 100% locally.",
+    "Meet Clawster: an AI pet that watches your screen, checks live info, and craves your attention. It blinks, scuttles toward you, and helps you get things done.",
   keywords: [
     "AI",
     "desktop pet",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Meet Clawster - The Cute AI Pet That Lives on Your Desktop",
     description:
-      "Meet Clawster: an AI pet that watches your screen, checks live info, and craves your attention. It blinks, stretches, scuttles toward you, and helps you get things done. Runs 100% locally.",
+      "Meet Clawster: an AI pet that watches your screen, checks live info, and craves your attention. It blinks, scuttles toward you, and helps you get things done.",
     type: "website",
     url: "https://clawster.pet",
     images: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Meet Clawster - The Cute AI Pet That Lives on Your Desktop",
     description:
-      "Meet Clawster: an AI pet that watches your screen, checks live info, and craves your attention. It blinks, stretches, scuttles toward you, and helps you get things done. Runs 100% locally.",
+      "Meet Clawster: an AI pet that watches your screen, checks live info, and craves your attention. It blinks, scuttles toward you, and helps you get things done.",
     images: ["/og-image.png"],
   },
 };
