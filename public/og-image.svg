@@ -25,10 +25,10 @@
   <rect width="1200" height="630" fill="url(#grid)"/>
 
   <!-- Glow behind Clawster -->
-  <ellipse cx="850" cy="315" rx="180" ry="180" fill="#FF8C69" opacity="0.15" filter="url(#glow)"/>
+  <ellipse cx="900" cy="315" rx="250" ry="250" fill="#FF8C69" opacity="0.15" filter="url(#glow)"/>
 
-  <!-- Clawster - idle pose (scaled up from 128 to ~300px, positioned on the right) -->
-  <g transform="translate(700, 165) scale(2.3)">
+  <!-- Clawster - idle pose (scaled up, positioned on the right) -->
+  <g transform="translate(720, 100) scale(3.2)">
     <style>
       .salmon { fill: #FF8C69; }
       .teal { fill: #008080; }
@@ -70,10 +70,10 @@
   </text>
 
   <!-- Description -->
-  <text x="80" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#6B7280">
+  <text x="80" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#B0B0B0">
     A cute lobster that watches your screen,
   </text>
-  <text x="80" y="430" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#6B7280">
+  <text x="80" y="450" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#B0B0B0">
     and scuttles toward you when lonely.
   </text>
 
