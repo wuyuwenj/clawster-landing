@@ -88,26 +88,52 @@ export default function InteractiveClawster() {
   const smoothX = useSpring(x, springConfig);
   const smoothY = useSpring(y, springConfig);
 
-  // Reset idle timer
+  // Reset idle timer - only resets the timestamp and clears timers
   const resetIdleTimer = useCallback(() => {
     lastInteractionRef.current = Date.now();
 
     if (sleepTimerRef.current) {
       clearTimeout(sleepTimerRef.current);
+      sleepTimerRef.current = null;
     }
 
-    // Start sleep timer (go to doze after 5s, sleep after 10s)
+    // Reset to idle if was sleeping
+    setMood("idle");
+  }, []);
+
+  // Sleep progression effect - separate from resetIdleTimer
+  useEffect(() => {
+    // Don't start sleep timer if dragging or already in sleep states
+    if (isDragging || mood === "sleep" || mood === "doze") {
+      return;
+    }
+
+    // Start doze timer
     sleepTimerRef.current = setTimeout(() => {
-      if (!isDragging && mood !== "sleep" && mood !== "doze") {
-        setMood("doze");
-        sleepTimerRef.current = setTimeout(() => {
-          if (!isDragging) {
-            setMood("sleep");
-          }
-        }, 5000);
-      }
+      setMood("doze");
     }, 5000);
+
+    return () => {
+      if (sleepTimerRef.current) {
+        clearTimeout(sleepTimerRef.current);
+      }
+    };
   }, [isDragging, mood]);
+
+  // Transition from doze to sleep
+  useEffect(() => {
+    if (mood === "doze" && !isDragging) {
+      sleepTimerRef.current = setTimeout(() => {
+        setMood("sleep");
+      }, 5000);
+
+      return () => {
+        if (sleepTimerRef.current) {
+          clearTimeout(sleepTimerRef.current);
+        }
+      };
+    }
+  }, [mood, isDragging]);
 
   // Set temporary mood then return to idle
   const setTemporaryMood = useCallback(
