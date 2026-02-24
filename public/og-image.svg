@@ -27,7 +27,7 @@
   <!-- Glow behind Clawster -->
   <ellipse cx="850" cy="315" rx="180" ry="180" fill="#FF8C69" opacity="0.15" filter="url(#glow)"/>
 
-  <!-- Clawster (scaled up from 128 to ~300px, positioned on the right) -->
+  <!-- Clawster - idle pose (scaled up from 128 to ~300px, positioned on the right) -->
   <g transform="translate(700, 165) scale(2.3)">
     <style>
       .salmon { fill: #FF8C69; }
@@ -36,12 +36,12 @@
     </style>
     <!-- Tail -->
     <path d="M 50 100 Q 64 125 78 100 Z" class="salmon" stroke="#8B3A3A" stroke-width="4" stroke-linejoin="round"/>
-    <!-- Left Claw - raised -->
-    <g transform="translate(0, -15) rotate(-30, 30, 70)">
+    <!-- Left Claw - idle (down) -->
+    <g>
       <path d="M 40 55 A 24 24 0 1 1 10 85 Q 20 80 25 75 Q 20 65 30 70 Z" class="salmon" stroke="#8B3A3A" stroke-width="4" stroke-linejoin="round"/>
     </g>
-    <!-- Right Claw - raised -->
-    <g transform="translate(0, -15) rotate(30, 98, 70)">
+    <!-- Right Claw - idle (down) -->
+    <g>
       <path d="M 88 55 A 24 24 0 1 0 118 85 Q 108 80 103 75 Q 108 65 98 70 Z" class="salmon" stroke="#8B3A3A" stroke-width="4" stroke-linejoin="round"/>
     </g>
     <!-- Body -->
@@ -52,10 +52,10 @@
     <!-- Eyes -->
     <circle cx="48" cy="55" r="7" class="ink"/>
     <circle cx="80" cy="55" r="7" class="ink"/>
-    <circle cx="46" cy="53" r="3" fill="#FFF"/>
-    <circle cx="78" cy="53" r="3" fill="#FFF"/>
-    <!-- Mouth -->
-    <path d="M 58 66 Q 64 74 70 66" fill="none" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="46" cy="53" r="2.5" fill="#FFF"/>
+    <circle cx="78" cy="53" r="2.5" fill="#FFF"/>
+    <!-- Mouth - idle (smaller smile) -->
+    <path d="M 60 68 Q 64 71 68 68" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
   </g>
 
   <!-- Text content (left side) -->
@@ -74,7 +74,7 @@
     A cute lobster that watches your screen,
   </text>
   <text x="80" y="430" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#6B7280">
-    answers questions, and keeps you company.
+    and scuttles toward you when lonely.
   </text>
 
 </svg>
