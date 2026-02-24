@@ -234,7 +234,7 @@ export default function InteractiveClawster() {
 
         // Only follow if cursor is far enough
         if (distance > 200) {
-          const speed = 0.02;
+          const speed = 0.008;
           const newX = x.get() + deltaX * speed;
           const newY = y.get() + deltaY * speed;
 
