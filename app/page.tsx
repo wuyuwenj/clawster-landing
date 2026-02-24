@@ -82,7 +82,7 @@ export default function LandingPage() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#008080] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#008080]"></span>
             </span>
-            2nd Place @ Human& Hackathon
+            2nd Place @ Humans& Hackathon
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tighter text-white max-w-4xl mx-auto leading-tight mb-6">
@@ -91,9 +91,9 @@ export default function LandingPage() {
           </h1>
 
           <p className="text-base md:text-lg text-neutral-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            A cute, animated desktop pet lobster powered by OpenClaw. It watches
-            your screen, answers questions, and keeps you company while you
-            code.
+            An AI pet that watches your screen, checks live info, and craves
+            your attention. It blinks, scuttles toward you, and helps you get
+            things done.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
@@ -468,50 +468,6 @@ export default function LandingPage() {
                     className="text-xs text-neutral-400 hover:text-white transition-colors"
                   >
                     GitHub Repository
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://github.com/wuyuwenj/clawster/releases"
-                    className="text-xs text-neutral-400 hover:text-white transition-colors"
-                  >
-                    Releases
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://github.com/wuyuwenj/clawster/blob/main/LICENSE"
-                    className="text-xs text-neutral-400 hover:text-white transition-colors"
-                  >
-                    MIT License
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-sm font-medium text-white mb-4">Community</h4>
-              <ul className="flex flex-col gap-3">
-                <li>
-                  <Link
-                    href="https://twitter.com/wuyuwenj"
-                    className="flex items-center gap-2 text-xs text-neutral-400 hover:text-white transition-colors"
-                  >
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                    </svg>
-                    Twitter / X
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://github.com/wuyuwenj/clawster/discussions"
-                    className="flex items-center gap-2 text-xs text-neutral-400 hover:text-white transition-colors"
-                  >
-                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                    Discussions
                   </Link>
                 </li>
               </ul>

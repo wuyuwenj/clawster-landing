@@ -24,8 +24,8 @@
   </pattern>
   <rect width="1200" height="630" fill="url(#grid)"/>
 
-  <!-- Glow behind Clawster -->
-  <ellipse cx="900" cy="315" rx="250" ry="250" fill="#FF8C69" opacity="0.15" filter="url(#glow)"/>
+  <!-- Glow behind Clawster (centered on Clawster body) -->
+  <ellipse cx="925" cy="310" rx="250" ry="250" fill="#FF8C69" opacity="0.15" filter="url(#glow)"/>
 
   <!-- Clawster - idle pose (scaled up, positioned on the right) -->
   <g transform="translate(720, 100) scale(3.2)">
