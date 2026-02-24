@@ -26,6 +26,6 @@
   <circle cx="80" cy="55" r="7" class="ink"/>
   <circle cx="46" cy="53" r="2.5" fill="#FFF"/>
   <circle cx="78" cy="53" r="2.5" fill="#FFF"/>
-  <!-- Mouth -->
-  <path d="M 60 68 Q 64 71 68 68" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+  <!-- Mouth - bigger smile -->
+  <path d="M 58 66 Q 64 74 70 66" fill="none" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
 </svg>
