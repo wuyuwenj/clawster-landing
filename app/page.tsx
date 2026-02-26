@@ -106,6 +106,15 @@ export default function LandingPage() {
               </svg>
               Star on GitHub
             </Link>
+            <a
+              href="https://github.com/wuyuwenj/clawster/releases/download/v0.1.2/Clawster-0.1.2-arm64.dmg"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white/10 text-white font-medium text-sm px-6 py-3 rounded-full hover:bg-white/20 transition-colors border border-white/10"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v12m0 0l4-4m-4 4l-4-4m8 8H8" />
+              </svg>
+              Download for Mac
+            </a>
             <Link
               href="#features"
               className="w-full sm:w-auto flex items-center justify-center gap-2 bg-transparent border border-white/10 text-white font-medium text-sm px-6 py-3 rounded-full hover:bg-white/5 transition-colors"
