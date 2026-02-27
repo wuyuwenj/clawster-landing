@@ -107,7 +107,7 @@ export default function LandingPage() {
               Star on GitHub
             </Link>
             <a
-              href="https://github.com/wuyuwenj/clawster/releases/download/v0.1.2/Clawster-0.1.2-arm64.dmg"
+              href="https://github.com/wuyuwenj/clawster/releases/download/v0.1.3/Clawster-0.1.3-arm64.dmg"
               className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white/10 text-white font-medium text-sm px-6 py-3 rounded-full hover:bg-white/20 transition-colors border border-white/10"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
