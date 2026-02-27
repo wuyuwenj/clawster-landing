@@ -51,6 +51,34 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Clawster",
+  applicationCategory: "UtilitiesApplication",
+  operatingSystem: "macOS",
+  description:
+    "An AI pet that watches your screen, checks live info, and craves your attention. It blinks, scuttles toward you, and helps you get things done.",
+  url: "https://clawster.pet",
+  downloadUrl: "https://github.com/wuyuwenj/clawster/releases/download/v0.1.3/Clawster-0.1.3-arm64.dmg",
+  screenshot: "https://clawster.pet/og-image.png",
+  author: {
+    "@type": "Person",
+    name: "wuyuwenj",
+    url: "https://github.com/wuyuwenj",
+  },
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    ratingCount: "1",
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -58,6 +86,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`scroll-smooth ${inter.variable} ${jetbrainsMono.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="font-sans">{children}</body>
     </html>
   );

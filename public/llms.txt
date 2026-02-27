@@ -1,0 +1,22 @@
+# Clawster
+
+> An AI desktop pet that watches your screen and helps you get things done.
+
+Clawster is a screen-aware AI companion for macOS. It's a cute lobster that lives on your desktop, watches what you're doing, and can help you with context-aware assistance.
+
+## Features
+
+- **Quick Chat**: Press Cmd+Shift+Space to summon Clawster anywhere for contextual help
+- **Screenshot Questions**: Press Cmd+Shift+/ to capture your screen and ask questions about it
+- **12 Moods**: Happy, Crossed, Sleep, Idle, Peek, Side Eye, Doze, Startle, Proud, Huff, Spin, Walking
+- **Powered by OpenClaw**: Runs locally with your own OpenClaw gateway for privacy
+
+## Download
+
+- macOS (Apple Silicon): https://github.com/wuyuwenj/clawster/releases/download/v0.1.3/Clawster-0.1.3-arm64.dmg
+
+## Links
+
+- Website: https://clawster.pet
+- GitHub: https://github.com/wuyuwenj/clawster
+- OpenClaw: https://github.com/openclaw/openclaw
