@@ -2,14 +2,53 @@
 
 > An AI desktop pet that watches your screen and helps you get things done.
 
-Clawster is a screen-aware AI companion for macOS. It's a cute lobster that lives on your desktop, watches what you're doing, and can help you with context-aware assistance.
+Clawster is a screen-aware AI companion for macOS. It's a cute lobster that lives on your desktop, watches what you're doing, and can help you with context-aware assistance. Built for developers and productivity enthusiasts.
 
-## Features
+## What is Clawster?
 
-- **Quick Chat**: Press Cmd+Shift+Space to summon Clawster anywhere for contextual help
-- **Screenshot Questions**: Press Cmd+Shift+/ to capture your screen and ask questions about it
-- **12 Moods**: Happy, Crossed, Sleep, Idle, Peek, Side Eye, Doze, Startle, Proud, Huff, Spin, Walking
-- **Powered by OpenClaw**: Runs locally with your own OpenClaw gateway for privacy
+Clawster is a free, open-source desktop pet application for macOS. Unlike traditional virtual pets, Clawster is powered by AI and can actually help you with your work. It sits on your screen, observes what you're doing, and provides contextual assistance when you need it.
+
+## Key Features
+
+### Quick Chat (Cmd+Shift+Space)
+Summon Clawster instantly from anywhere on your Mac. It knows what app you're using and provides context-aware help without breaking your flow.
+
+### Screenshot Questions (Cmd+Shift+/)
+Capture any part of your screen and ask Clawster about it. Perfect for debugging code, understanding error messages, or getting help with complex UIs.
+
+### 12 Animated Moods
+Clawster expresses itself through 12 different moods: Happy, Crossed, Sleep, Idle, Peek, Side Eye, Doze, Startle, Proud, Huff, Spin, and Walking. Each mood is beautifully animated.
+
+### Privacy-First Design
+Powered by OpenClaw, Clawster runs entirely on your local machine. Your screen data and conversations never leave your computer.
+
+### Customizable Personality
+Configure Clawster's identity, rules, and behavior through local configuration files. Make it a strict code reviewer, a cheerful assistant, or anything in between.
+
+## Frequently Asked Questions
+
+### Is Clawster free?
+Yes, Clawster is completely free and open-source under the MIT license.
+
+### What platforms does Clawster support?
+Currently macOS only (Apple Silicon). Windows and Linux support may come in the future.
+
+### Does Clawster send my data to the cloud?
+No. Clawster uses OpenClaw which runs locally. Your screen captures and conversations stay on your machine.
+
+### How do I install Clawster?
+Download the DMG from GitHub releases, open it, and drag Clawster to your Applications folder.
+
+### What is OpenClaw?
+OpenClaw is a local AI gateway that powers Clawster. It provides the AI capabilities while keeping everything private and on-device.
+
+## Technical Details
+
+- **Platform**: macOS (Apple Silicon / arm64)
+- **Framework**: Electron
+- **AI Backend**: OpenClaw (local)
+- **License**: MIT
+- **Language**: TypeScript
 
 ## Download
 
@@ -18,5 +57,10 @@ Clawster is a screen-aware AI companion for macOS. It's a cute lobster that live
 ## Links
 
 - Website: https://clawster.pet
-- GitHub: https://github.com/wuyuwenj/clawster
+- GitHub Repository: https://github.com/wuyuwenj/clawster
 - OpenClaw: https://github.com/openclaw/openclaw
+- Documentation: https://github.com/wuyuwenj/clawster#readme
+
+## Keywords
+
+Clawster, AI desktop pet, macOS AI assistant, screen-aware AI, desktop companion, OpenClaw, developer tools, productivity app, virtual pet, AI lobster, context-aware assistant
