@@ -123,13 +123,16 @@ export default function LandingPage() {
             <div className="rounded-xl overflow-hidden bg-black aspect-video relative border border-white/5">
               <video
                 src="/clawsterDemo.mp4"
+                poster="/video-poster.jpg"
                 autoPlay
                 loop
                 muted
                 playsInline
                 controls
                 className="w-full h-full object-cover"
-              />
+              >
+                Your browser does not support the video tag. Download Clawster at clawster.pet.
+              </video>
             </div>
           </div>
         </div>

@@ -185,6 +185,16 @@ const jsonLd = {
         },
       ],
     },
+    {
+      "@type": "VideoObject",
+      "@id": "https://clawster.pet/#video",
+      name: "Clawster AI Desktop Pet Demo",
+      description:
+        "A demo of Clawster, the AI desktop pet powered by OpenClaw for macOS. Shows the animated lobster companion, quick chat, screenshot questions, and screen-aware assistance.",
+      thumbnailUrl: "https://clawster.pet/video-poster.jpg",
+      contentUrl: "https://clawster.pet/clawsterDemo.mp4",
+      uploadDate: "2026-03-01",
+    },
   ],
 };
 
@@ -196,6 +206,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`scroll-smooth ${inter.variable} ${jetbrainsMono.variable}`}>
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#FF8C69" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

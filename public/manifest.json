@@ -1,0 +1,21 @@
+{
+  "name": "Clawster - AI Desktop Pet",
+  "short_name": "Clawster",
+  "description": "A free AI desktop pet powered by OpenClaw for macOS. A screen-aware AI companion that lives on your desktop.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#FF8C69",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
