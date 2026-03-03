@@ -92,7 +92,7 @@ export default function NewsletterPopup() {
             Stay in the loop!
           </h3>
           <p className="text-neutral-400 text-sm mb-6">
-            Get notified when Clawster is ready to adopt. No spam, just one email when we launch.
+            Get the latest updates, new features, and release notes delivered to your inbox.
           </p>
 
           {status === "success" ? (
@@ -118,7 +118,7 @@ export default function NewsletterPopup() {
                 disabled={status === "loading"}
                 className="w-full px-6 py-3 rounded-xl bg-[#FF8C69] text-black font-medium text-sm hover:bg-[#ff9d7f] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {status === "loading" ? "Subscribing..." : "Notify Me"}
+                {status === "loading" ? "Subscribing..." : "Subscribe"}
               </button>
               {status === "error" && (
                 <p className="text-red-400 text-sm">{message}</p>

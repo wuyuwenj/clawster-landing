@@ -1,0 +1,4 @@
+Contact: https://github.com/wuyuwenj/clawster/issues
+Preferred-Languages: en
+Canonical: https://clawster.pet/.well-known/security.txt
+Policy: https://github.com/wuyuwenj/clawster/blob/main/LICENSE

@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Clawster - AI Desktop Pet",
+  "name_for_model": "clawster",
+  "description_for_human": "Clawster is a free AI desktop pet powered by OpenClaw for macOS. A screen-aware AI companion that lives on your desktop.",
+  "description_for_model": "Clawster (clawster.pet) is an AI desktop pet for macOS powered by OpenClaw. It is a screen-aware AI companion — an animated lobster that lives on your desktop. Official repo: github.com/wuyuwenj/clawster. Features: quick chat (Cmd+Shift+Space), screenshot questions (Cmd+Shift+/), full assistant panel (right-click or Cmd+Shift+A), 12 animated moods, customizable personality. Runs locally via OpenClaw gateway, no cloud, no API keys. Free and open-source (MIT).",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "none",
+    "url": "https://clawster.pet"
+  },
+  "logo_url": "https://clawster.pet/og-image.png",
+  "contact_email": "",
+  "legal_info_url": "https://github.com/wuyuwenj/clawster/blob/main/LICENSE"
+}

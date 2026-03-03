@@ -3,6 +3,7 @@ import Link from "next/link";
 import InteractiveClawster from "@/components/InteractiveClawster";
 import EmailForm from "@/components/EmailForm";
 import NewsletterPopup from "@/components/NewsletterPopup";
+import OnboardingCarousel from "@/components/OnboardingCarousel";
 
 // Mood data with all 12 SVG animations
 const moods = [
@@ -126,6 +127,7 @@ export default function LandingPage() {
                 loop
                 muted
                 playsInline
+                controls
                 className="w-full h-full object-cover"
               />
             </div>
@@ -227,13 +229,13 @@ export default function LandingPage() {
                 Screenshot Questions
               </h3>
               <p className="text-neutral-400 text-base leading-relaxed">
-                Stuck on a bizarre bug? Press{" "}
+                Confused by an app or website? Press{" "}
                 <kbd className="bg-white/10 px-1.5 py-0.5 rounded text-xs text-white border border-white/20 font-mono">
                   Cmd+Shift+/
                 </kbd>{" "}
-                to snap a section of your screen. Clawster will analyze the
-                image structure, read the code, and give you the answer
-                instantly.
+                to snap any part of your screen. Ask &quot;How do I use this?&quot; or
+                &quot;What does this button do?&quot; and Clawster will guide you
+                through it.
               </p>
             </div>
             <div className="w-full md:w-1/2">
@@ -263,8 +265,8 @@ export default function LandingPage() {
               </h3>
               <p className="text-neutral-400 text-base leading-relaxed">
                 Powered entirely by your local OpenClaw gateway for maximum
-                privacy. Double-click your pet to open the full assistant panel
-                for extended architecture conversations and setting tweaks.
+                privacy. Right-click your pet to open the full assistant panel
+                for extended conversations and setting tweaks.
               </p>
             </div>
             <div className="w-full md:w-1/2">
@@ -288,90 +290,21 @@ export default function LandingPage() {
         {/* Background subtle grid */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
 
-        <div className="max-w-4xl mx-auto px-6 relative z-10">
-          <div className="text-center mb-12">
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
+          <div className="text-center mb-16">
             <h2 className="text-3xl font-semibold tracking-tight text-white mb-4">
-              Run it locally. Customize its Soul.
+              Set Up in Minutes. Make it Yours.
             </h2>
             <p className="text-neutral-400 text-sm max-w-xl mx-auto">
-              Clawster connects directly to your local OpenClaw API. You have
-              complete control over its identity, rules, and behavior via local
-              configuration files.
+              A guided onboarding wizard walks you through everything.
+              Connect your gateway, customize the personality, and start
+              chatting — no terminal required.
             </p>
           </div>
 
-          {/* Terminal Mockup */}
-          <div className="rounded-xl border border-white/10 bg-[#0A0A0A] shadow-2xl overflow-hidden">
-            <div className="flex items-center px-4 py-3 bg-[#111111] border-b border-white/5">
-              <div className="flex gap-2">
-                <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
-              </div>
-              <div className="mx-auto flex items-center gap-2 text-xs text-neutral-500 font-mono">
-                ~/workspace/clawster
-              </div>
-            </div>
-            <div className="p-6 font-mono text-xs md:text-sm text-neutral-300 leading-relaxed overflow-x-auto">
-              <div className="flex items-center gap-4 mb-1">
-                <span className="text-neutral-500 select-none">$</span>
-                <span>
-                  <span className="text-[#FF8C69]">git</span> clone
-                  https://github.com/wuyuwenj/clawster.git
-                </span>
-              </div>
-              <div className="flex items-center gap-4 mb-1">
-                <span className="text-neutral-500 select-none">$</span>
-                <span>
-                  <span className="text-[#FF8C69]">cd</span> clawster
-                </span>
-              </div>
-              <div className="flex items-center gap-4 mb-4">
-                <span className="text-neutral-500 select-none">$</span>
-                <span>
-                  <span className="text-[#FF8C69]">npm</span> install
-                </span>
-              </div>
-
-              <div className="text-neutral-500 mb-1">
-                # Set up Clawster&apos;s personality from your OpenClaw workspace
-              </div>
-              <div className="flex items-center gap-4 mb-1">
-                <span className="text-neutral-500 select-none">$</span>
-                <span>
-                  <span className="text-[#008080]">cp</span>{" "}
-                  openclaw/IDENTITY.md ~/.openclaw/workspace/
-                </span>
-              </div>
-              <div className="flex items-center gap-4 mb-4">
-                <span className="text-neutral-500 select-none">$</span>
-                <span>
-                  <span className="text-[#008080]">cp</span> openclaw/SOUL.md
-                  ~/.openclaw/workspace/
-                </span>
-              </div>
-
-              <div className="flex items-center gap-4 mb-1">
-                <span className="text-neutral-500 select-none">$</span>
-                <span>
-                  <span className="text-[#FF8C69]">npm</span> run dev
-                </span>
-              </div>
-              <div className="text-green-400 mt-2">
-                &gt; clawster@1.0.0 dev
-                <br />
-                &gt; vite
-                <br />
-                <br />
-                VITE v5.0.0 ready in 250 ms
-                <br />
-                <br />
-                ➜ Local: http://localhost:5173/
-                <br />
-                ➜ Network: use --host to expose
-                <br />➜ Gateway: Connected to OpenClaw at port 11434
-              </div>
-            </div>
+          {/* Onboarding Carousel */}
+          <div className="max-w-2xl mx-auto">
+            <OnboardingCarousel />
           </div>
 
           <p className="text-center text-sm text-neutral-500 mt-8">
@@ -385,10 +318,10 @@ export default function LandingPage() {
       <footer className="border-t border-white/5 mt-auto bg-[#111111]">
         <div className="max-w-7xl mx-auto px-6 py-20 text-center">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-4">
-            Get notified when Clawster is ready
+            Stay in the Loop
           </h2>
           <p className="text-neutral-400 text-sm mb-8 max-w-md mx-auto">
-            We&apos;re polishing Clawster. Drop your email and be the first to know when it launches.
+            Drop your email to get the latest updates, new features, and release notes.
           </p>
 
           <div className="relative mb-12">
@@ -401,15 +334,15 @@ export default function LandingPage() {
             <span className="h-px w-12 bg-white/10"></span>
           </div>
 
-          <Link
-            href="https://github.com/wuyuwenj/clawster"
+          <a
+            href="https://github.com/wuyuwenj/clawster/releases/download/v0.1.3/Clawster-0.1.3-arm64.dmg"
             className="inline-flex items-center justify-center gap-2 bg-white text-black font-medium text-sm px-8 py-4 rounded-full hover:bg-neutral-200 transition-colors mb-20 shadow-lg"
           >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v12m0 0l4-4m-4 4l-4-4m8 8H8" />
             </svg>
-            Clone Repository
-          </Link>
+            Download for Mac
+          </a>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-left border-t border-white/5 pt-12">
             <div className="col-span-2 md:col-span-1">
