@@ -123,9 +123,9 @@ const jsonLd = {
       description:
         "A free AI desktop pet powered by OpenClaw for macOS. A cute lobster that lives on your desktop, watches your screen, and helps you get things done. The first desktop pet built on OpenClaw.",
       url: "https://clawster.pet",
-      downloadUrl: "https://github.com/wuyuwenj/clawster/releases/download/v0.1.3/Clawster-0.1.3-arm64.dmg",
+      downloadUrl: "https://github.com/wuyuwenj/clawster/releases/download/v0.1.4/Clawster-0.1.4-arm64.dmg",
       screenshot: "https://clawster.pet/og-image.png",
-      softwareVersion: "0.1.3",
+      softwareVersion: "0.1.4",
       author: {
         "@type": "Person",
         name: "wuyuwenj",
