@@ -125,7 +125,7 @@ const jsonLd = {
       url: "https://clawster.pet",
       downloadUrl: "https://github.com/wuyuwenj/clawster/releases/download/v0.1.5/Clawster-0.1.5-arm64.dmg",
       screenshot: "https://clawster.pet/og-image.png",
-      softwareVersion: "0.1.5",
+      softwareVersion: "0.1.6",
       author: {
         "@type": "Person",
         name: "wuyuwenj",
