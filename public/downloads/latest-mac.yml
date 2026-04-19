@@ -1,17 +1,17 @@
 version: 0.1.6
 files:
   - url: Clawster-0.1.6-mac.zip
-    sha512: 9h3AB1EaOEAmmPzSjESnBTTY4Y5Nd0Dg7are+84YNUTLlZBYOohCaoC96MU0XKKceW2xhBRYEk2k++RhfGI6yA==
-    size: 108277301
+    sha512: m05BlTH0d/g9926ak7n2dp8YLOKU8WKIfQ/+pXKNWCKkuNg1q7jS0V7+7jHKUcTcSxs8X118htaR886fzxWpmw==
+    size: 108363374
   - url: Clawster-0.1.6-arm64-mac.zip
-    sha512: hBL3JW3+YjKSmTCqtYLEJJ1gmm8u55xAfjTFVj619YFXzTIUbRg80bOqBl3z79DSxCAreMnLL7hWXfS2JOKkrw==
-    size: 100707601
+    sha512: FQzIy6+VqS1SilyZbUDN2tHwrCv1y4u6yFsT4TvCb3WGDqWA+UbDEiRR2j86W5MoV/h9WBKKkWdV5I1aonZrFQ==
+    size: 101795457
   - url: Clawster-0.1.6.dmg
-    sha512: RaAsWDl4uCW/qgT+2iimYaQlV31dTpZ+qdI9fbKnWhbXMdJkdvFgIn3v4J5zbiWAYHgzX2svos9naWkZXzaEjw==
-    size: 112492419
+    sha512: odRbBh0Jwe9cDEEAOy+tYCcEc0DuFsEFGjtBCUD4yebjgxx+D0pkHp6fj0M3Bj3rsZusbXgpVPNJYo+aJwJM7A==
+    size: 112591725
   - url: Clawster-0.1.6-arm64.dmg
-    sha512: i+GKgVQOv2Mhqf/Yv5M2cntthCSG/2Jaz0BvYnr5VI6kpJW8tKcJyZYim8zOGY8mc9MDfprGshIIJ6JtKMe7PQ==
-    size: 105029854
+    sha512: M3EIVoeGw86zLhHq6Yt98uItEnCAPWgKO3NRvcf0yY8/rTY+OfgaDHlFjp7TaPOYhPcwnDcXlsnliGdl8XvUqA==
+    size: 106113543
 path: Clawster-0.1.6-mac.zip
-sha512: 9h3AB1EaOEAmmPzSjESnBTTY4Y5Nd0Dg7are+84YNUTLlZBYOohCaoC96MU0XKKceW2xhBRYEk2k++RhfGI6yA==
+sha512: m05BlTH0d/g9926ak7n2dp8YLOKU8WKIfQ/+pXKNWCKkuNg1q7jS0V7+7jHKUcTcSxs8X118htaR886fzxWpmw==
 releaseDate: '2026-04-18T20:20:05.116Z'
