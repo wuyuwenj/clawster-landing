@@ -1,17 +1,17 @@
 version: 0.1.6
 files:
-  - url: https://github.com/wuyuwenj/clawster/releases/download/v0.1.6/Clawster-0.1.6-mac.zip
+  - url: Clawster-0.1.6-mac.zip
     sha512: 9h3AB1EaOEAmmPzSjESnBTTY4Y5Nd0Dg7are+84YNUTLlZBYOohCaoC96MU0XKKceW2xhBRYEk2k++RhfGI6yA==
     size: 108277301
-  - url: https://github.com/wuyuwenj/clawster/releases/download/v0.1.6/Clawster-0.1.6-arm64-mac.zip
+  - url: Clawster-0.1.6-arm64-mac.zip
     sha512: hBL3JW3+YjKSmTCqtYLEJJ1gmm8u55xAfjTFVj619YFXzTIUbRg80bOqBl3z79DSxCAreMnLL7hWXfS2JOKkrw==
     size: 100707601
-  - url: https://github.com/wuyuwenj/clawster/releases/download/v0.1.6/Clawster-0.1.6.dmg
+  - url: Clawster-0.1.6.dmg
     sha512: RaAsWDl4uCW/qgT+2iimYaQlV31dTpZ+qdI9fbKnWhbXMdJkdvFgIn3v4J5zbiWAYHgzX2svos9naWkZXzaEjw==
     size: 112492419
-  - url: https://github.com/wuyuwenj/clawster/releases/download/v0.1.6/Clawster-0.1.6-arm64.dmg
+  - url: Clawster-0.1.6-arm64.dmg
     sha512: i+GKgVQOv2Mhqf/Yv5M2cntthCSG/2Jaz0BvYnr5VI6kpJW8tKcJyZYim8zOGY8mc9MDfprGshIIJ6JtKMe7PQ==
     size: 105029854
-path: https://github.com/wuyuwenj/clawster/releases/download/v0.1.6/Clawster-0.1.6-mac.zip
+path: Clawster-0.1.6-mac.zip
 sha512: 9h3AB1EaOEAmmPzSjESnBTTY4Y5Nd0Dg7are+84YNUTLlZBYOohCaoC96MU0XKKceW2xhBRYEk2k++RhfGI6yA==
 releaseDate: '2026-04-18T20:20:05.116Z'

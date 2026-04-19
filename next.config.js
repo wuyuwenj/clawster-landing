@@ -3,6 +3,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/downloads/:filename(Clawster-.*)",
+        destination: "https://github.com/wuyuwenj/clawster/releases/latest/download/:filename",
+        permanent: false,
+      },
+    ];
+  },
   async headers() {
     return [
       {
